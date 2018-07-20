@@ -1,37 +1,14 @@
-Start Server
-------------
+Express Send Html Demo
+----------------------
 
 ```
 npm install
 node index.js
 ```
 
-Will listen on `3000`
+Will listen on `3000`.
 
-Client: Say hello
------------------
+You can visit:
 
-```
-curl localhost:3000
-```
-
-Client: POST with form data
----------------------------
-
-```
-curl -X POST -d '{"name":"bbb","email":"bbb.com"}' localhost:3000/user
-```
-
-Client: POST with JSON
------------------------
-
-```
-curl -X POST -d '{"name":"bbb","email":"bbb.com"}' -H "Content-Type: application/json" localhost:3000/user
-```
-
-Client: Show users
--------------------
-
-```
-curl localhost:3000/users
-```
+- Render a html file: <http://localhost:3000/index.html>
+- Use a string as html content: <http://localhost:3000/index2.html>
